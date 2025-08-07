@@ -1,2 +1,3 @@
 # Elaine-Martinez-Luna
 portfolio project for Intro to Programming course with Code the Dream
+Elaine Martinez
