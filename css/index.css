@@ -1,22 +1,37 @@
-body {
-    background-color: green;
-    color: blue;
-    font-family: "Outfit", sans-serif;
+*{
+    margin:0;
+    padding:0r;
+    box-sizing: border-box;
+    font-family: "Xahn Mono", Arial, sans-serif;
+}
+
+#headshot{
+    float: right;
+    margin: 5rem;
+}
+body{
+    background-color: #f2ebdf;
+    color:#ff6c4a;
 }
 
 h1 {
-    color: rgb(0, 255, 217);
+    color: #ff6c4a;;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 500;
-    color: white;
+    color:#ff6c4a;
 }
 
 section {
     margin: 10px;
     padding: 30px;
+}
+
+.logo{
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 #Experience {
@@ -25,7 +40,7 @@ section {
 }
 
 #link {
-    color:white;
+    color:#ff6c4a;
 
 }
 
