@@ -10,6 +10,24 @@
     margin: 5rem;
     width: 300px;
 }
+
+
+
+.NavBar{
+    padding-top: 1rem;
+    float:right;
+    overflow: hidden;
+    font-family: Xanh Mono, Arial, sans-serif;
+    
+}
+
+.NavBarLi{
+    display: inline;
+    padding:10px 20px;
+    justify-content: right;
+    
+}
+
 body{
     background-color: #f2ebdf;
     color:#ff6c4a;
@@ -36,14 +54,75 @@ section {
     padding-left: 1rem;
 }
 
+
+
+
 #Experience {
     text-align: left;
-    
+ 
 }
 
-#link{
-    width: 50px;
-    height: 50px;
+#Experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+#Experience li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid ;
+    color:black;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.experience-date {
+    font-style: italic;
+    color : blue;
+
+}
+
+.experience-description {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+#Connect a {
+    text-decoration: none;
+    border: none;
+}
+
+.connect-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.connect-icons img{
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.connect-icons img:hover {
+    transform:scale(1.1);
+}
+
 
 
