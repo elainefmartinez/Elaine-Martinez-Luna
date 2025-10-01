@@ -101,6 +101,8 @@ section {
  
 }
 
+
+
 #Experience ul {
     list-style: none;
     padding: 0;
@@ -111,7 +113,7 @@ section {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid ;
-    color:black;
+    color:#ff6c4a;
 }
 
 .experience-header {
@@ -127,7 +129,7 @@ section {
 
 .experience-date {
     font-style: italic;
-    color : blue;
+    color : #ff6c4a;
 
 }
 
@@ -138,8 +140,80 @@ section {
 }
 
 
+/*form*/
+
+#form h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+form{
+    max-width: 600px;
+    margin: 2rem auto;
+    padding:1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button{
+    background: #ff6c4a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ff6c4a;
+}
+
+
+#mesages button {
+    margin-left: 1rem;
+    padding:6px 12px;
+    background-color: #ff6c4a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#messages button:hover {
+    background: #ff6c4a;
+}
+
+@media (max-width: 600px) {
+    form input, form textarea, form button {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+}
+
 
 /*Connect Section*/
+
+#Connect h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 #Connect a {
     text-decoration: none;
     border: none;
