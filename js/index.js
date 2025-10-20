@@ -69,3 +69,29 @@ messageForm.addEventListener('submit', function(event) {
     messageForm.reset();
 });
 
+const GITHUB_USERNAME = "elainefmartinez";
+
+fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
+    .then(response => {
+        return response.json();
+    })
+    .then(repositories => {
+        console.log(repositories);
+
+        const projectsSection = document.getElementById('projects');
+        const projectsList = projectsSection.querySelector('ul');
+
+        for (let i =0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            project.innerHTML = repositories[i].name;
+            projectsList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching repos:', error);
+
+    
+        const projectsSection = document.getElementById('projects');
+        projectsSection.innerHTML += `<p> Sorry, could not load. Try again</p>`;
+    });
+    
